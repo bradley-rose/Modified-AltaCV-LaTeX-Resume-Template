@@ -1,0 +1,107 @@
+%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls. This has been heavily modified to prioritize ATS scanning as the primary task here, with the second priority of looking nice.
+% This was created by Bradley Rose on GitHub: https://github.com/bradley-rose/Modified-AltaCV-LaTeX-Resume-Template
+
+\documentclass[10pt,letterpaper,ragged2e,withhyper]{altacv}
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.25cm,bottom=1.25cm,columnsep=1.2cm}
+
+% Global fonts
+\usepackage[rm]{roboto}
+\usepackage[defaultsans]{lato}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Change the colours if you want to
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\normalsize}
+\renewcommand{\cvsectionfont}{\normalsize\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+
+%%%%% Begin editing personal information here. Edit your LinkedIn and GitHub URIs to match the websites appropriately, as these do get hyperlinked on the final PDF for a simple click-to-view. If you do not have these, simply comment them out, or remove them entirely. You can include alternative/custom fields here too (GitLab, etc.), just look up the original AltaCV documentation.
+\name{firstName lastName}
+\personalinfo{%
+  \email{email@domain.tld}
+  \phone{(555) 420-6969}
+  \location{City, PR}
+  \linkedin{LinkedIn-URI}
+  \github{github-URI}
+}
+\makecvheader
+
+%%%%% Enter some keywords here from a particular job posting, and do some keyword stuffing here to make sure you've ticked enough boxes to get through ATS.
+\cvsection{Technical Skills}
+  \begin{tabularx}{0.675\textwidth}{llll}
+    \textbf{Keyword:} & Skill1 & Skill2 & Skill3 \\ 
+    \textbf{Keyword2:} & Skill1 & Skill2 & Skill3 \\ 
+    \textbf{Keyword3} & Skill1 & Skill2 & Skill3 \\ 
+  \end{tabularx}
+
+%%%%% Begin the experience section. Again, another personal format choice to prioritize ATS. Enter a key skill, and then express how you satisfied this skill. Make sure this represents something listed from the job posting.
+
+\cvsection{Experience}
+  \cvevent{Job Title}{Organization}{Date From -- Date To}{Location}
+  \begin{itemize}
+    \item{\textbf{Keyword}: Job detail that aligns with keyword.}
+    \item{\textbf{Keyword2}: Job detail that aligns with keyword.}
+  \end{itemize}
+
+  \divider
+
+  \cvevent{Job Title}{Organization}{Date From -- Date To}{Location}
+  \begin{itemize}
+    \item{\textbf{Keyword}: Job detail that aligns with keyword.}
+    \item{\textbf{Keyword2}: Job detail that aligns with keyword.}
+  \end{itemize}
+
+  \divider
+
+  \cvevent{Job Title}{Organization}{Date From -- Date To}{Location}
+  \begin{itemize}
+    \item{\textbf{Keyword}: Job detail that aligns with keyword.}
+    \item{\textbf{Keyword2}: Job detail that aligns with keyword.}
+  \end{itemize}
+  
+%%%%% Begin Education. Straightforward section here. 
+\cvsection{Education}
+  \cvevent{Program Title / Credential Name}{Institute}{Date From -- Date To}{}
+
+  \divider
+  \newline
+  \cvevent{Program Title / Credential Name}{Institute}{Date From -- Date To}{}
+
+%%%%% Certifications section. A section that applies to me as an IT professional that may not apply to new-grads, or individuals in other fields.
+
+\cvsection{Certifications}
+  \cvevent{Certification Name}{Vendor / Provider}{Date Obtained}{}
+  \newline
+  \divider
+  \newline
+  \cvevent{Certification Name}{Vendor / Provider}{Date Obtained}{}
+  \newline
+  \divider
+  \newline
+  \cvevent{Certification Name}{Vendor / Provider}{Date Obtained}{}
+
+\end{document}

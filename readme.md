@@ -1,5 +1,7 @@
 # Modified AltaCV LaTeX Resume Template
 
+![picture](./picture.png)
+
 ## Explanation
 This is a resume template built using the [AltaCV](https://www.overleaf.com/latex/templates/altacv-template/trgqjpwnmtgv) resume template. I've modified this to work better with most Application Tracking Systems. The original AltaCV format looks excellent, but there's two critical issues:  
 
